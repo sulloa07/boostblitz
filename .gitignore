@@ -70,3 +70,26 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Ignore Lightmap data
+[Aa]ssets/**/Lightmap-*.exr
+[Aa]ssets/**/ReflectionProbe-*.exr
+
+# Ignore generated files for platform-specific builds
+[Aa]ssets/StreamingAssets/
+
+# Ignore ShaderCache, which can get large
+[Aa]ssets/ShaderCache/
+
+# Cache files for the Addressables system
+[Aa]ssets/AddressableAssetsData/*.bin*
+[Aa]ssets/AddressableAssetsData/*.json
+
+# Ignore Unity Cloud Build generated files
+[Uu]cb/
+
+# Ignore any build-specific directories if your project has custom build folders
+Builds/
+BuildReports/
+
